@@ -9,8 +9,17 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
-			//Write your code here
-			
+  // Remove duplicates
+  const unique = [...new Set(arr)];
+
+  if (unique.length < 2) return -Infinity;
+
+  // Sort in descending order
+  unique.sort((a, b) => b - a);
+
+  return unique[1]; // Second highest
+}
+
 		}
 
 		function Main() {
