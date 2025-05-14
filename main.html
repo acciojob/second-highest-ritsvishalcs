@@ -9,17 +9,16 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
-  // Remove duplicates
-  const unique = [...new Set(arr)];
+			//Write your code here
+			 const unique = [...new Set(arr)]; // Remove duplicates
 
-  if (unique.length < 2) return -Infinity;
+  if (unique.length < 2) {
+    return -Infinity; // Not enough unique elements
+  }
 
-  // Sort in descending order
-  unique.sort((a, b) => b - a);
+  unique.sort((a, b) => b - a); // Sort in descending order
 
-  return unique[1]; // Second highest
-}
-
+  return unique[1]; // Return the second highest
 		}
 
 		function Main() {
